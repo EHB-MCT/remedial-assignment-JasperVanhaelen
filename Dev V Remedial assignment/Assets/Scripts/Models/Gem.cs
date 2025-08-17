@@ -1,20 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
+// A serializable Gem object that can be stored in player inventory
 [System.Serializable]
 public class Gem
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public int Quantity { get; set; }
-    public float Price { get; set; }
+    [Header("Data")]
+    public int id;
+    public string name;
+    public int price;
+    public int quantity;    // How many owned
 
-    public Gem(int id, string name, float price)
+    [Header("UI References")]
+    public TextMeshProUGUI costText;
+    public TextMeshProUGUI ownedText;
+    public Button buyButton;
+    public Button sellButton;
+
+    public Gem(int id, string name, int price)
     {
-        Id = id;
-        Name = name;
-        Price = price;
-        Quantity = 0;
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.quantity = 0;
     }
 }

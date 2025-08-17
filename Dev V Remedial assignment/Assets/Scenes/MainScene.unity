@@ -2342,7 +2342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: 0}
+  m_AnchoredPosition: {x: 156, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200328561
@@ -3711,8 +3711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 170}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -17.72381, y: 179}
+  m_SizeDelta: {x: 257.4477, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1788617646
 MonoBehaviour:
@@ -4081,6 +4081,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898528056}
   m_CullTransparentMesh: 1
+--- !u!1 &2020057504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020057505}
+  - component: {fileID: 2020057506}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020057505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020057504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 422.98026, y: 143.47176, z: -0.8109565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020057506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020057504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90328ec6daacbd04baae0e3153c7228e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 500
+  moneyText: {fileID: 1788617646}
+  gems:
+  - id: 1
+    name: Ruby
+    price: 100
+    quantity: 0
+    costText: {fileID: 93283934}
+    ownedText: {fileID: 744251887}
+    buyButton: {fileID: 871359329}
+    sellButton: {fileID: 1681705799}
+  - id: 2
+    name: Emerald
+    price: 60
+    quantity: 0
+    costText: {fileID: 96940000}
+    ownedText: {fileID: 212588598}
+    buyButton: {fileID: 2104735199}
+    sellButton: {fileID: 2055107438}
+  - id: 3
+    name: Sapphire
+    price: 50
+    quantity: 0
+    costText: {fileID: 797830360}
+    ownedText: {fileID: 1529468059}
+    buyButton: {fileID: 1060000258}
+    sellButton: {fileID: 562740059}
+  - id: 4
+    name: Quartz
+    price: 20
+    quantity: 0
+    costText: {fileID: 1694256802}
+    ownedText: {fileID: 546449568}
+    buyButton: {fileID: 2031948747}
+    sellButton: {fileID: 737011942}
 --- !u!1 &2031948745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,3 +4746,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 781075011}
   - {fileID: 1622241049}
+  - {fileID: 2020057505}
